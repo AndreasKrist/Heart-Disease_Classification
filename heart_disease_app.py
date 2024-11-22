@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
+
 # Load the trained model
 model = joblib.load('heart-disease-model.joblib')
 
@@ -15,7 +16,7 @@ st.text("Heart disease refers to a range of conditions affecting the heart's str
 
 # User inputs
 st.header("Enter Your Information")
-name = st.text_input("Name", "John Doe")
+name = st.text_input("Name", placeholder="Your Name ...")
 
 age = st.number_input("Age", value=30)
 
